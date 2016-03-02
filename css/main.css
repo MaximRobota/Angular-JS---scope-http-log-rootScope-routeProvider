@@ -1,0 +1,23 @@
+th {
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+}
+.loader-content {
+    width: 128px;
+    height: 128px;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    z-index: 10;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+.title-task {
+    border: none;
+    font-size: 24px;
+}

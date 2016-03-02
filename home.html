@@ -1,0 +1,18 @@
+<div class="container">
+	<table class="table table-hover table-striped">
+	  <thead>
+	    <tr>
+	      <th ng-repeat="(key, val) in table.headerKeys" ng-bind="val"></th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr ng-repeat="tr in table.itemsActive">
+	      <td style="{{setStyle(tr.is_high_priority)}}"><a href="#main" ng-click="transitionMain()">{{tr.name}}</a></td>
+	      <td style="{{setStyle(tr.is_high_priority)}}"><span ng-repeat="tag in tr.tags"> {{tag}} </span></td>
+	      <td style="{{setStyle(tr.is_high_priority)}}">{{tr.actual_effort}}</td>
+	      <td style="{{setStyle(tr.is_high_priority)}}">{{tr.estimated_effort}}</td>
+	      <td style="{{setStyle(tr.is_high_priority)}}">{{tr.due_date | date:'HH:mm:ss dd-MM-yyyy'}}</td>
+	    </tr>
+	  </tbody>
+	</table>
+</div>

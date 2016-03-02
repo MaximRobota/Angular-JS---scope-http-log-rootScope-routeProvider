@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="spa">
+<head>
+    <meta charset="utf-8"/>
+    <title>App test</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/bower_components/angular-bootstrap/ui-bootstrap-csp.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/media.css"/>
+
+    <script src="/lib/jasmine_examples/Player.js"></script>
+    <script src="/lib/jasmine_examples/Song.js"></script>
+    <script src="/spec/helpers/jasmine_examples/SpecHelper.js"></script>
+    <script src="/lib/jasmine_examples/PlayerSpec.js"></script>
+</head>
+<body>
+<ul>
+    <li><a href="#/">Index</a></li>
+    <li><a href="#main">Main</a></li>
+</ul>
+<div ng-view></div>
+<div class="loader" ng-show="loader"><div class="loader-content">Loading...</div></div>
+
+ 
+<!--[if lt IE 9]>
+<script src="/bower_components/html5shiv/dist/html5shiv.min.js"></script>
+<script src="/bower_components/html5shiv/dist/html5shiv-printshiv.min.js"></script>
+<script src="/bower_components/respond/dest/respond.min.js"></script>
+<![endif]-->
+
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/bower_components/angular/angular.min.js"></script>
+<script src="/bower_components/angular-resource/angular-resource.min.js"></script>
+<script src="/bower_components/angular-route/angular-route.min.js"></script>
+<script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<script src="/js/common.js"></script>
+<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>
